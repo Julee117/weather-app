@@ -11,7 +11,7 @@ class CurrentWeatherList extends Component {
     }
 
     return (
-      <div>{forecast}</div>
+      <div className="weatherBox">{forecast}</div>
     )
   }
 }

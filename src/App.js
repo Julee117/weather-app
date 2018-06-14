@@ -29,7 +29,9 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Weather App</h1>
         </header>
-        <CurrentWeatherList cityWeather={cityWeather}/>
+        <div className="container">
+          <CurrentWeatherList cityWeather={cityWeather}/>
+        </div>
       </div>
     );
   }
