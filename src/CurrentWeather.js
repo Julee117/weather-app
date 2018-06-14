@@ -3,7 +3,11 @@ import React from 'react'
 const CurrentWeather = ({weather}) =>
   <div className="box">
     <p>{weather.name}</p>
-    <p>{Math.round(weather.main.temp)}</p>
+    <p>{Math.round(weather.main.temp)}&deg;</p>
+    <p>
+      <img src={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`} alt="Weather image"/><br />
+      {weather.weather[0].description}
+    </p>
   </div>
 
 
