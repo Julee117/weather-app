@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CurrentWeather from './CurrentWeather';
 
 class CurrentWeatherList extends Component {
+
   render() {
     let forecast;
     if (this.props.cityWeather.length) {
@@ -11,7 +12,9 @@ class CurrentWeatherList extends Component {
     }
 
     return (
-      <div className="weatherBox">{forecast}</div>
+      <div className="weatherBox">
+        {forecast}
+      </div>
     )
   }
 }
