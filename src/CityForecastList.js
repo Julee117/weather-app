@@ -4,23 +4,25 @@ import CityForecast from "./CityForecast";
 class CityForecastList extends Component {
 
   render() {
-    let hottestTemp;
+    let dayTempData;
     if (this.props.climate.length) {
-      hottestTemp = this.props.climate.filter(weather => {
+      dayTempData = this.props.climate.filter(weather => {
         return weather.dt_txt.includes("15:00:00")
       })
     }
 
     let weather;
-    if (hottestTemp) {
-      weather = hottestTemp.map((day, index) => {
+    if (dayTempData) {
+      weather = dayTempData.map((day, index) => {
         return <CityForecast key={index} day={day} />
       })
     }
 
     return (
-      <div className="weatherBox">
-        {weather}
+      <div className="container">
+        <div className="forecastBox">
+          {weather}
+        </div>
       </div>
     )
   }
