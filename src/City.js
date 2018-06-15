@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CityForecastList from './CityForecastList';
 
 const URL = `https://api.openweathermap.org/data/2.5/forecast?q=`;
 const KEY = `us&appid=${process.env.REACT_APP_API_KEY}`;
@@ -20,8 +21,12 @@ class City extends Component {
   }
 
   render() {
+    const {climate} = this.state
+
     return(
-      <div>hi</div>
+      <div>
+        <CityForecastList climate={climate} />
+      </div>
     )
   }
 
