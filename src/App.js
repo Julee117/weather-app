@@ -30,7 +30,7 @@ class App extends Component {
           <h1 className="App-title">Weather App</h1>
         </header>
         <div className="container">
-          <CurrentWeatherList cityWeather={cityWeather}/>
+          <CurrentWeatherList cityWeather={cityWeather} />
         </div>
       </div>
     );
