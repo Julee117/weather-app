@@ -11,6 +11,13 @@
     display: flex;
     width: 50%;
   }
+
+/* CityForecastList */
+  .forecastBox {
+    display: flex;
+    width: 50%;
+    text-align: center;
+  }
 }
 
 .App {
