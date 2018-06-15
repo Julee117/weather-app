@@ -2,7 +2,7 @@
 @media(min-width:768px) {
   .container {
     display: flex;
-    margin-top: 20px;
+    margin-top: 40px;
     justify-content: center;
   }
 
@@ -10,6 +10,20 @@
   .weatherBox {
     display: flex;
     width: 50%;
+    background-color: white;
+    border-style: groove;
+    border-color: #e6f5ff;
+    border-width: 4px;
+  }
+
+  /* CurrentWeather */
+  .name {
+    font-size: 1.3em;
+  }
+
+  .cityLink {
+    text-decoration: none;
+    color: #007acc;
   }
 
 /* CityForecastList */
@@ -17,7 +31,16 @@
     display: flex;
     width: 50%;
     text-align: center;
+    background-color: white;
+    border-style: groove;
+    border-color: #e6f5ff;
+    border-width: 4px;
   }
+}
+
+body {
+  /* background-color: #222; */
+  background-color: #4db8ff;
 }
 
 .App {
@@ -25,7 +48,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  /* background-color: #222; */
   height: 50px;
   padding: 20px;
   color: white;
