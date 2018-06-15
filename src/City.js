@@ -29,7 +29,6 @@ class City extends Component {
       </div>
     )
   }
-
 }
 
 export default City;
