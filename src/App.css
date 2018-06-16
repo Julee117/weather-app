@@ -20,6 +20,7 @@
   /* CurrentWeather */
   .name {
     font-size: 1.3em;
+    font-weight: bold;
   }
 
   .cityLink {
@@ -70,6 +71,20 @@ body {
 .forecastTitle {
   text-align: center;
   color: white;
+}
+
+/* CityForecast */
+.day {
+  color: #008ae6;
+  font-weight: bold;
+}
+
+.date {
+  color: #989898;
+}
+
+.temp {
+  font-size: 22px;
 }
 
 /* Navbar */
