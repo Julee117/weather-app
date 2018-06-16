@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CityForecast from "./CityForecast";
+import Navbar from "./Navbar";
 
 class CityForecastList extends Component {
 
@@ -19,9 +20,15 @@ class CityForecastList extends Component {
     }
 
     return (
-      <div className="container">
-        <div className="forecastBox">
-          {weather}
+      <div>
+        <Navbar />
+        <header className="App-header">
+          <h1 className="forecastTitle">5 Day Forecast</h1>
+        </header>
+        <div className="container">
+          <div className="forecastBox">
+            {weather}
+          </div>
         </div>
       </div>
     )
