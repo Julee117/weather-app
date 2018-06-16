@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CityForecast from "./CityForecast";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 
 class CityForecastList extends Component {
 
