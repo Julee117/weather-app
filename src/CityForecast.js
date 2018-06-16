@@ -8,13 +8,11 @@ class CityForecast extends Component {
 
     return (
       <div className="box">
-        <p>{date[0]}</p>
-        <p>{date[1]} {date[2]}</p>
-        <p>{Math.round(day.main.temp)}&deg;</p>
-        <p>
-          <img src={`http://openweathermap.org/img/w/${day.weather[0].icon}.png`} alt="weather" height="70" width="70"/><br />
-          {day.weather[0].description}
-        </p>
+        <p className="day">{date[0].toUpperCase()}</p>
+        <p className="date">{date[1]} {date[2]}</p>
+        <p className="temp">{Math.round(day.main.temp)}&deg;</p>
+          <img src={`http://openweathermap.org/img/w/${day.weather[0].icon}.png`} alt="weather" height="70" width="70"/>
+        <p>{day.weather[0].description}</p>
       </div>
     )
   }
