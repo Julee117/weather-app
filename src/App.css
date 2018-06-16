@@ -9,7 +9,7 @@
   /* CurrentWeatherList */
   .weatherBox {
     display: flex;
-    width: 50%;
+    width: 75%;
     background-color: white;
     border-style: groove;
     border-color: #e6f5ff;
@@ -29,29 +29,28 @@
 /* CityForecastList */
   .forecastBox {
     display: flex;
-    width: 50%;
+    width: 75%;
     text-align: center;
     background-color: white;
     border-style: groove;
     border-color: #e6f5ff;
     border-width: 4px;
+    margin-top: 20px;
+  }
+
+  .App-header {
+    height: 50px;
+    padding: 20px;
+    color: white;
   }
 }
 
 body {
-  /* background-color: #222; */
   background-color: #4db8ff;
 }
 
 .App {
   text-align: center;
-}
-
-.App-header {
-  /* background-color: #222; */
-  height: 50px;
-  padding: 20px;
-  color: white;
 }
 
 .App-title {
@@ -64,4 +63,22 @@ body {
   border: 1px #ccc solid;
   padding: 5px;
   flex: 1;
+}
+
+/* CityForecastList */
+.forecastTitle {
+  text-align: center;
+}
+
+/* Navbar */
+.navBar {
+  background-color: rgb(49, 50, 55);
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.homeButton {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 100px;
 }
