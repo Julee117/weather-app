@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CurrentWeatherList from "./CurrentWeatherList";
+import CurrentWeatherList from "./containers/CurrentWeatherList";
 import './App.css';
 
 const APIURL = "https://api.openweathermap.org/data/2.5/group?id=5128581,5368361,4699066,4164138,5809844";
