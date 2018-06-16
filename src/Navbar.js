@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 
 const Navbar = () =>
   <div className="navBar">
-    <Button className="homeButton" bsStyle="success"><NavLink to="/" className="buttonName">Home</NavLink></Button>
+    <Button className="homeButton" bsStyle="light"><NavLink to="/" className="buttonName">Home</NavLink></Button>
   </div>
 
 export default Navbar;
